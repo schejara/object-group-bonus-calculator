@@ -48,10 +48,21 @@ console.log('array of employee data: ',  employees );
 
 // This function will calculate 1 employee's bonus!
 //
-function calculateIndividualEmployeeBonus( employee ) {  
+function calculateIndividualEmployeeBonus( employee ) { 
+ if(employee.reviewRating < 2){
+ employee. bonus === 0;
+}
+return employee.bouns;
+}
+  console.log(calculateIndividualEmployeeBonus({
+    name: 'Mayella',
+    employeeNumber: '89068',
+    annualSalary: '35000',
+    reviewRating: 1
+  }))
+  
+  
   // your logic here
   
   
   // return new object with bonus results
-
-}
